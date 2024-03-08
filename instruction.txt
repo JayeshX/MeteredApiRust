@@ -1,0 +1,4 @@
+surreal start memory -A --auth --user root --pass root --bind 0.0.0.0:8001
+
+# INSERT INTO users (name,email,keys,bill) values ("jay","j@gmail.com",[],"0")
+update users set keys+=["rust"] where name = "jay";
